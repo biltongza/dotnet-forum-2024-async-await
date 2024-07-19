@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Tests", "Async.Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Api", "Async.Api\Async.Api.csproj", "{8BD1B34D-C40E-4582-A631-6EA24F53F191}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Do.App", "Do.App\Do.App.csproj", "{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dont.App", "Dont.App\Dont.App.csproj", "{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
