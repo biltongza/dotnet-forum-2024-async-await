@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-forum-2024-async-await", "dotnet-forum-2024-async-await\dotnet-forum-2024-async-await.csproj", "{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Tests", "Async.Tests\Async.Tests.csproj", "{0DEFE657-442D-4C52-B642-91640D36BCF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Api", "Async.Api\Async.Api.csproj", "{8BD1B34D-C40E-4582-A631-6EA24F53F191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DEFE657-442D-4C52-B642-91640D36BCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEFE657-442D-4C52-B642-91640D36BCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEFE657-442D-4C52-B642-91640D36BCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEFE657-442D-4C52-B642-91640D36BCF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD1B34D-C40E-4582-A631-6EA24F53F191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
