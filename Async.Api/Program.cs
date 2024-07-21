@@ -1,7 +1,18 @@
+using Async.Api.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<IWeatherRepository, InMemoryWeatherRepository>();
+
 var app = builder.Build();
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
+app.UseRouting();
+app.MapControllers();
 
 var summaries = new[]
 {
@@ -26,6 +37,7 @@ app.MapGet("/weatherforecast", async () =>
     Console.WriteLine("Number of result: " + forecast.Length);
     return forecast;
 });
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

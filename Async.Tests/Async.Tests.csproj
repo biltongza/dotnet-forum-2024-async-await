@@ -23,4 +23,9 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Async.Api.Lib\Async.Api.Lib.csproj" />
+      <ProjectReference Include="..\Async.Api\Async.Api.csproj" />
+    </ItemGroup>
+
 </Project>

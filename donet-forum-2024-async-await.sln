@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Do.App", "Do.App\Do.App.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dont.App", "Dont.App\Dont.App.csproj", "{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Api.Lib", "Async.Api.Lib\Async.Api.Lib.csproj", "{F9483609-01E4-4309-8C8B-39132CAFDCFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9483609-01E4-4309-8C8B-39132CAFDCFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9483609-01E4-4309-8C8B-39132CAFDCFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9483609-01E4-4309-8C8B-39132CAFDCFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9483609-01E4-4309-8C8B-39132CAFDCFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
