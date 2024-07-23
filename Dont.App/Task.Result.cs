@@ -11,9 +11,9 @@ public static class TaskResult
 
         var ids = await InitAsync(weatherClient);
 
-        FetchWithForeach(ids, weatherClient);
+        //FetchWithForeach(ids, weatherClient);
 
-        //await FetchWithTaskWhenAll(ids, weatherClient);
+        await FetchWithTaskWhenAll(ids, weatherClient);
     }
     
     private static void FetchWithForeach(List<string> ids, WeatherClient weatherClient)

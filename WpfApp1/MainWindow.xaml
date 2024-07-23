@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <TabControl
+            SelectedIndex="2">
+            <TabItem
+                Height="40"
+                Width="100"
+                Header="Async Void">
+                <StackPanel>
+                    <Label
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Content="Output">
+                    </Label>
+                    <TextBox
+                        Height="250"
+                        Width="400"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Margin="0, 20, 0, 0"
+                        Name="Output"
+                    >
+                    </TextBox>
+                    <Button Height="50" 
+                            Width="150"
+                            Margin="20"
+                            Click="AsyncVoidButton_OnClick"
+                            Name="AsyncVoidButton"
+                            Content="Load data from API"
+                    ></Button>
+                </StackPanel>
+            </TabItem>
+            
+            <TabItem
+            Header="await Task.Completed"></TabItem>
+            
+            <TabItem Header="Task.Result">
+                <StackPanel>
+                    <Label
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Content="Output">
+                    </Label>
+                    <TextBox
+                        Height="250"
+                        Width="400"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        Margin="0, 20, 0, 0"
+                        Name="TaskResultOutput"
+                    >
+                    </TextBox>
+                    <StackPanel FlowDirection="LeftToRight" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Height="50" 
+                                Width="175"
+                                Margin="20"
+                                Click="CallUsingTaskResultButton_OnClick"
+                                Name="CallUsingTaskResultButton"
+                                Content="Load data using Task.Result"
+                        ></Button>
+                        <Button Height="50" 
+                                Width="175"
+                                Margin="20"
+                                Click="CallUsingAsyncButton_OnClick"
+                                Name="CallUsingAsyncButton"
+                                Content="Load data using async/await"
+                        ></Button>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

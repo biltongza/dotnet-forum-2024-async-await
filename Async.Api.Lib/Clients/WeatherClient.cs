@@ -16,7 +16,7 @@ public class WeatherClient
         task.Wait();
     }
     
-    public async void SetWeatherTemperature2(Weather weather)
+    public async void SetWeatherTemperatureAsync(Weather weather)
     {
         var client = new HttpClient();
         var result = await client.PutAsync("http://localhost:5172/api/weather",
@@ -28,7 +28,7 @@ public class WeatherClient
     public async Task<Weather?> GetByIdAsync(string id)
     {
         var client = new HttpClient();
-        var result = await client.GetFromJsonAsync<Weather>($"http://localhost:5172/api/weather/{id}");
+        var result = await client.GetFromJsonAsync<Weather>($"http://localhost:5172/api/weather/{id}").ConfigureAwait(false);
 
         return result;
     }
