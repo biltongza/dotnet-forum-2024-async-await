@@ -3,27 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-forum-2024-async-await", "dotnet-forum-2024-async-await\dotnet-forum-2024-async-await.csproj", "{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-forum-2024-async-await", "dotnet-forum-2024-async-await\dotnet-forum-2024-async-await.csproj", "{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Tests", "Async.Tests\Async.Tests.csproj", "{0DEFE657-442D-4C52-B642-91640D36BCF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Tests", "Async.Tests\Async.Tests.csproj", "{0DEFE657-442D-4C52-B642-91640D36BCF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Api", "Async.Api\Async.Api.csproj", "{8BD1B34D-C40E-4582-A631-6EA24F53F191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Api", "Async.Api\Async.Api.csproj", "{8BD1B34D-C40E-4582-A631-6EA24F53F191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Do.App", "Do.App\Do.App.csproj", "{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Do.App", "Do.App\Do.App.csproj", "{3008AB3B-FBD8-4BC7-BCB8-5614D9A2928E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dont.App", "Dont.App\Dont.App.csproj", "{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dont.App", "Dont.App\Dont.App.csproj", "{4744C079-E97D-4E95-8C4D-F808DE9D7D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async.Api.Lib", "Async.Api.Lib\Async.Api.Lib.csproj", "{F9483609-01E4-4309-8C8B-39132CAFDCFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async.Api.Lib", "Async.Api.Lib\Async.Api.Lib.csproj", "{F9483609-01E4-4309-8C8B-39132CAFDCFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{1B715F0C-19A8-43F2-98D8-1838A1B7638E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{1B715F0C-19A8-43F2-98D8-1838A1B7638E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformsAsyncExample", "WinformsAsyncExample\WinformsAsyncExample.csproj", "{ECAB9268-0DAC-4534-8BEE-16DF21E1578E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{09559FAD-6C39-46F5-9E71-6A8744B1A3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -54,5 +53,15 @@ Global
 		{1B715F0C-19A8-43F2-98D8-1838A1B7638E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B715F0C-19A8-43F2-98D8-1838A1B7638E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B715F0C-19A8-43F2-98D8-1838A1B7638E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAB9268-0DAC-4534-8BEE-16DF21E1578E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAB9268-0DAC-4534-8BEE-16DF21E1578E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAB9268-0DAC-4534-8BEE-16DF21E1578E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAB9268-0DAC-4534-8BEE-16DF21E1578E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {531DEF2B-8C9C-4ACE-BB7A-69F847EC6E82}
 	EndGlobalSection
 EndGlobal
