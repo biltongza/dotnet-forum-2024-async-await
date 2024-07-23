@@ -1,14 +1,14 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
 
-public class MyAwaitable<T>
+public class PoorMansTask<T>
 {
     private bool _completed = false;
     private Exception? _exception;
     private Action? _continuation;
     private ExecutionContext? _executionContext;
     private T? _result;
-    public MyAwaiter GetAwaiter() => new MyAwaiter(this);
+    public PoorMansTaskAwaiter GetAwaiter() => new PoorMansTaskAwaiter(this);
     private readonly object _lock = new object();
 
     public bool IsCompleted
@@ -92,7 +92,7 @@ public class MyAwaitable<T>
         }
     }
 
-    public class MyAwaiter(MyAwaitable<T> awaitable) : INotifyCompletion
+    public class PoorMansTaskAwaiter(PoorMansTask<T> awaitable) : INotifyCompletion
     {
         public bool IsCompleted => awaitable.IsCompleted;
 
@@ -104,6 +104,6 @@ public class MyAwaitable<T>
 
         public void OnCompleted(Action continuation) => awaitable.ContinueWith(continuation);
 
-        public MyAwaiter GetAwaiter() => this;
+        public PoorMansTaskAwaiter GetAwaiter() => this;
     }
 }
